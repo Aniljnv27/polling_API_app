@@ -1,9 +1,8 @@
 const Port = 4000; // Define the port number
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 const db = require('./config/mongoose');
 

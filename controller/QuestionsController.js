@@ -3,6 +3,7 @@ const Option=require('../models/options')
 
 module.exports.create=async function(req,res){
 //  in this the question are created
+    console.log(req);
     console.log(req.url);
     console.log(req.body);
     await Question.create(req.body,function(err,ques){
